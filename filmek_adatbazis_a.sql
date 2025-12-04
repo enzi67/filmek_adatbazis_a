@@ -29,3 +29,6 @@ CREATE TABLE szineszek (
     aktiv ENUM('igen', 'nem') DEFAULT 'igen',
     regisztracio_idopontja TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- 6. feladat --
+DESCRIBE szineszek
