@@ -15,14 +15,14 @@ CREATE TABLE filmek (
     rendezo VARCHAR(120) NOT NULL,
     megjelenesi_ev YEAR,
     hossz INT CHECK (hossz BETWEEN 25 AND 320),
-    korhatar ENUM(0, 6, 12, 16, 18),
+    korhatar ENUM('0', '6', '12', '16', '18'),
     ertekeles FLOAT DEFAULT 5.0
 );
 
 -- 5. feladat --
 DROP TABLE IF EXISTS szineszek;
 CREATE TABLE szineszek (
-    id AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nev VARCHAR(100) NOT NULL,
     szuletesi__datum DATE,
     nemzetiseg VARCHAR(50) DEFAULT 'magyar',
