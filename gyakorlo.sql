@@ -49,7 +49,7 @@ SELECT * FROM filmek ORDER BY megjelenesi_ev ASC;
 
 -- 10. feladat
 -- Rendezd a filmeket értékelés szerint csökkenő sorrendben!
-SELECT * FROM filmek ORDER BY ertekeles DESC;
+SELECT * FROM film  ek ORDER BY ertekeles DESC;
 
 -- 11. feladat
 -- Listázd ki a színészeket születési dátum szerint növekvő sorrendben!
