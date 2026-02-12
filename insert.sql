@@ -42,9 +42,10 @@ set nemzetiseg = 'brit'
 where nev = 'Daniel Day-Lewis';
 
 --8.feladat
-
+DELETE FROM `filmek` WHERE megjelenesi_ev < 1990;
 
 --9.feladat
-
+DELETE FROM `szineszek` WHERE aktiv = 'nem';
 
 --10.feladat
+DELETE FROM `filmek` WHERE cim = "Toy Story 4";
