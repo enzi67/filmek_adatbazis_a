@@ -14,3 +14,9 @@ mycursor.execute('SELECT cim, ev FROM film WHERE nyert = 1 ORDER BY ev ASC;')
 filmek = mycursor.fetchall()
 for film in filmek:
     print(film)
+
+
+mycursor.execute('SELECT * FROM film WHERE ev BETWEEN 1939 AND 1945;')
+filmek = mycursor.fetchall()
+for film in filmek:
+    print(film)
