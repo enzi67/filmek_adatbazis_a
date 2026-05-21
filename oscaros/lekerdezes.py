@@ -7,8 +7,8 @@ mydb = mysql.connector.connect(user='root', password='mysql',
 
 mycursor = mydb.cursor()
 
-mycursor.execute('use oscar')
-mycursor.execute('select * from film;')
+# mycursor.execute('use oscar')
+mycursor.execute('SELECT cim, ev FROM film WHERE nyert = 1 ORDER BY ev ASC;')
 # print(film)
 
 filmek = mycursor.fetchall()

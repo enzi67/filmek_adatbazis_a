@@ -1,16 +1,19 @@
-2. Készítsen lekérdezést, amely az elismerés évének sorrendjében jeleníti meg az Oscar-díjas
-filmeket! Az elnyerés éve és a film eredeti címe jelenjen meg! (2nyertes)
+# 2. Készítsen lekérdezést, amely az elismerés évének sorrendjében jeleníti meg az Oscar-díjas
+#filmeket! Az elnyerés éve és a film eredeti címe jelenjen meg! (2nyertes)
+SELECT cim, ev FROM film WHERE nyert = 1 ORDER BY ev ASC
 
-3. Készítsen lekérdezést, amely megadja, hogy mely években jelöltek legalább 10 filmet a
-díjra! Csak a jelölés évét jelenítse meg! (3min10)
+#3. Készítsen lekérdezést, amely megadja, hogy mely években jelöltek legalább 10 filmet a
+#díjra! Csak a jelölés évét jelenítse meg! (3min10)
 
-4. Készítsen lekérdezést, amely megadja azon filmek eredeti címét, amelyeket a második
-világháború éveiben (1939 és 1945 között, a határokat is beleértve) jelöltek és ebben az
-időszakban be is mutattak hazánkban! (4vh)
 
-5. Készítsen lekérdezést, amely megadja, hogy mely nyertes filmek esetén volt a
-magyarországi bemutató legalább 10 évvel később, mint a díjazás! Csak a film eredeti címét
-jelenítse meg! (5kesve)
+#4. Készítsen lekérdezést, amely megadja azon filmek eredeti címét, amelyeket a második
+#világháború éveiben (1939 és 1945 között, a határokat is beleértve) jelöltek és ebben az
+#időszakban be is mutattak hazánkban! (4vh)
+
+
+#5. Készítsen lekérdezést, amely megadja, hogy mely nyertes filmek esetén volt a
+#magyarországi bemutató legalább 10 évvel később, mint a díjazás! Csak a film eredeti címét
+#jelenítse meg! (5kesve)
 
 6. Vannak olyan producerek, akiknek több filmjét is jelölték díjra, e feladatban őket keressük.
 Készítsen lekérdezést, amely megadja, hogy hány év telt el a legelső és a legutolsó jelölés
